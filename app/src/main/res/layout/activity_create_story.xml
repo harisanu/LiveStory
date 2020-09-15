@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateStoryActivity">
+
+    <TextView
+        android:id="@+id/createStoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create new story"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/design_default_color_on_secondary"/>
+
+    <EditText
+        android:id="@+id/createStoryEditTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/createStoryTitle"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundededittext"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Story title"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/createStoryThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/createStoryEditTitle"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/gradientbackground"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/createStoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/roundbutton"
+        android:text="Create story"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+</RelativeLayout>

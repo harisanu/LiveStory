@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_earth_outline"
+        android:title="View stories" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_camera_outline"
+        android:title="Camera" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_person_outline"
+        android:title="Profile" />
+
+</menu>

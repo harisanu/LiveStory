@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#CC201C1C">
+
+    <TextView
+        android:id="@+id/addStoryTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD TO STORY"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <ListView
+        android:id="@+id/addStoryListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/addStoryTextTitle"/>
+
+    <TextView
+        android:id="@+id/addStoryTextFiller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- OR -"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_below="@id/addStoryListView"
+        />
+
+    <Button
+        android:id="@+id/addStoryCreateButton"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/roundededittext"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Create new story"
+        android:layout_below="@id/addStoryTextFiller"
+        />
+</RelativeLayout>
